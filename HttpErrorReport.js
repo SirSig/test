@@ -1,4 +1,4 @@
-export class HttpErrorReport extends Error {
+class HttpErrorReport extends Error {
     constructor(message, status, statusText, url) {
         super(message);
         this.name = this.constructor.name;
@@ -8,3 +8,4 @@ export class HttpErrorReport extends Error {
         this.url = url;
     }
 }
+module.export = HttpErrorReport;
